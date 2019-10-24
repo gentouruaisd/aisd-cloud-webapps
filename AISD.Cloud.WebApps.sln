@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AISD.Cloud.WebApps.SSAgreements", "AISD.Cloud.WebApps.SSAgreements\AISD.Cloud.WebApps.SSAgreements.csproj", "{B01F32B5-AC19-4ABA-8A98-0CC06ACCCDAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AISD.Cloud.WebApps.Tests", "AISD.Cloud.WebApps.Tests\AISD.Cloud.WebApps.Tests.csproj", "{94407164-FD1A-4371-AA85-5CBC6521B5BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AISD.Cloud.WebApps.Tests", "AISD.Cloud.WebApps.Tests\AISD.Cloud.WebApps.Tests.csproj", "{02AEA518-CD42-42D1-B9A1-EB8F04E78EEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B01F32B5-AC19-4ABA-8A98-0CC06ACCCDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B01F32B5-AC19-4ABA-8A98-0CC06ACCCDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B01F32B5-AC19-4ABA-8A98-0CC06ACCCDAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{94407164-FD1A-4371-AA85-5CBC6521B5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{94407164-FD1A-4371-AA85-5CBC6521B5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{94407164-FD1A-4371-AA85-5CBC6521B5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{94407164-FD1A-4371-AA85-5CBC6521B5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02AEA518-CD42-42D1-B9A1-EB8F04E78EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02AEA518-CD42-42D1-B9A1-EB8F04E78EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02AEA518-CD42-42D1-B9A1-EB8F04E78EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02AEA518-CD42-42D1-B9A1-EB8F04E78EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

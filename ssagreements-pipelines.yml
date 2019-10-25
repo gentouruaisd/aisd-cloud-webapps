@@ -19,8 +19,8 @@ stages:
     steps:
     - task: DotNetCoreInstaller@0
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
-        inputs:
-          version: '$(dotnetSdkVersion)'
+      inputs:
+        version: '$(dotnetSdkVersion)'
 
     - task: Npm@1
       displayName: 'Run npm install'
@@ -81,7 +81,7 @@ stages:
             artifact: drop
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
-            inputs:
-              azureSubscription: 'Resource Manager - AISD - SSAgreements'
-              appName: '$(WebAppName)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+              inputs:
+                azureSubscription: 'Resource Manager - AISD - SSAgreements'
+                appName: '$(WebAppName)'
+                package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'

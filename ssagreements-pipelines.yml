@@ -44,12 +44,12 @@ stages:
         projects: '**/*.csproj'
 
     - template: templates/build.yml
-        parameters:
-          buildConfiguration: 'Debug'
+      parameters:
+        buildConfiguration: 'Debug'
 
     - template: templates/build.yml
-        parameters:
-          buildConfiguration: 'Release'
+      parameters:
+        buildConfiguration: 'Release'
     
     - task: DotNetCoreCLI@2
       displayName: 'Run unit tests - $(buildConfiguration)'

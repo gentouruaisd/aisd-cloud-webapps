@@ -1,5 +1,6 @@
 variables:
   buildConfiguration: 'Release'
+  projectName: 'SSAgreements'
 
 stages:
 - stage: 'Build'
@@ -36,6 +37,7 @@ stages:
     #- script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
      # displayName: 'Write build info'
      # workingDirectory: $(wwwrootDir)
+
     - task: DotNetCoreCLI@2
       displayName: 'Run unit tests - $(buildConfiguration)'
       inputs:
@@ -56,8 +58,8 @@ stages:
 
     - template: templates/build.yml
       parameters:
-        buildConfiguration: 'Release'    
-
+        buildConfiguration: 'Release'
+    
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact: drop'
       condition: succeeded()    
@@ -81,6 +83,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'Resource Manager - AISD - SSAgreements'
+              azureSubscription: 'Resource Manager - AISD - $(projectName)'
               appName: '$(WebAppName)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*SSAgreements.zip'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*$(projectName).zip'
